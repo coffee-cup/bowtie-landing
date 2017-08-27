@@ -8,4 +8,3 @@ type Msg
     | Increase Int
     | Decrease Int
     | ShowHome
-    | ShowAbout

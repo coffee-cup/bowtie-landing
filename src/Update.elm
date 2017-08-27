@@ -37,9 +37,6 @@ update msg model =
         ShowHome ->
             ( model, changePage HomeRoute )
 
-        ShowAbout ->
-            ( model, changePage AboutRoute )
-
         Increase amount ->
             ( { model | counter = model.counter + amount }, Cmd.none )
 

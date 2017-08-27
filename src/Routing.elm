@@ -6,7 +6,6 @@ import Route exposing (..)
 
 type Sitemap
     = HomeRoute
-    | AboutRoute
     | NotFoundRoute
 
 
@@ -15,14 +14,9 @@ homeR =
     HomeRoute := static ""
 
 
-aboutR : Route.Route Sitemap
-aboutR =
-    AboutRoute := static "about"
-
-
 sitemap : Route.Router Sitemap
 sitemap =
-    router [ homeR, aboutR ]
+    router [ homeR ]
 
 
 removeTrailingSlash : String -> String
@@ -47,9 +41,6 @@ toString r =
         HomeRoute ->
             reverse homeR []
 
-        AboutRoute ->
-            reverse aboutR []
-
         NotFoundRoute ->
             "/404"
 
@@ -64,9 +55,6 @@ pageTitle r =
     case r of
         HomeRoute ->
             mainTitle
-
-        AboutRoute ->
-            mainTitle ++ " - About"
 
         NotFoundRoute ->
             "Not Found"

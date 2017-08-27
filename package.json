@@ -4,16 +4,14 @@
   "description": "Score keeping iOS app.",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p --progress",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress",
     "start": "npm run dev",
     "copy": "cp -r public/* build; cp public/index.html build/200.html; cp public/index.html build/404.html",
     "clean": "rimraf build",
     "pages": "node metadata/metadata.js",
     "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production webpack -p --progress",
     "postbuild": "npm run copy && npm run pages",
-    "predeploy": "npm run build",
-    "deploy": "surge build/ https://coffee-cup-elm-template.surge.sh",
     "test": "echo \"Error: no test specified\""
   },
   "author": "Jake Runzer <jakerunzer@gmail.com> (https://jakerunzer.xyz)",

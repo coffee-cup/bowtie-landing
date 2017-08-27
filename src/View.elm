@@ -27,9 +27,6 @@ page model =
         HomeRoute ->
             homeView model
 
-        AboutRoute ->
-            aboutView model
-
         NotFoundRoute ->
             notFoundView
 
