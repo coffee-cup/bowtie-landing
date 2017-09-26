@@ -45,7 +45,7 @@ header model =
 
 badge : Html Msg
 badge =
-    a [ href "#", class "none mt3" ]
+    a [ href "https://itunes.apple.com/us/app/bowtie/id1273962971?ls=1&mt=8", class "none mt3" ]
         [ img [ src "/assets/appstore.svg", class "badge img-center" ] []
         ]
 
