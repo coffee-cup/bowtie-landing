@@ -1,6 +1,6 @@
 # bowtie-landing
 
-Landing page for [Bowtie](https://github.com/coffee-cup/bowtie), a score keeping iOS app.
+Landing page for [Bowtie](https://bowtie.jakerunzer.com), a score keeping iOS app.
 
 ## Development ✨
 

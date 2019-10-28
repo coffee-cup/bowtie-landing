@@ -39,7 +39,7 @@ header model =
             , img [ src "/assets/bowtie.svg", class "logo mv2" ] []
             , p [ class "f3 tc mv3 measure desc" ] [ text "Score Keeping iOS App"
                                                    , br [] []
-                                                   , text "Save paper when playing card or board game"]
+                                                   , text "Save paper when playing card or board games"]
             , badge
             ]
         ]
