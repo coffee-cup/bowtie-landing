@@ -69,6 +69,9 @@ footer =
             , span [ class "heart" ] [ text "♥" ]
             , text " by "
             , a [ href "https://jakerunzer.com" ] [ text "jakerunzer" ]
+            , text ". source on "
+            , a [ href "https://github.com/coffee-cup/bowtie" ] [ text "github" ]
+            , text "."
             ]
         ]
 
