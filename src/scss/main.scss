@@ -71,13 +71,11 @@ ul.none {
     padding-bottom: 4rem;
 }
 
-.spotify {
-    transition: $s-animation;
-    &:hover {
-        color: $spotify;
-    }
-}
-
 .badge {
     width: 12rem;
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: auto;
 }

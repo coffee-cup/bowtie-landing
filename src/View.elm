@@ -37,7 +37,9 @@ header model =
         [ div [ class "flex jc col w-100" ]
             [ h1 [ class "f-headline-ns f-subheadline pt3 mv0 tc" ] [ text "Bowtie" ]
             , img [ src "/assets/bowtie.svg", class "logo mv2" ] []
-            , p [ class "f3 tc mv0" ] [ text "Score Keeping iOS App" ]
+            , p [ class "f3 tc mv3 measure desc" ] [ text "Score Keeping iOS App"
+                                                   , br [] []
+                                                   , text "Save paper when playing card or board game"]
             , badge
             ]
         ]
