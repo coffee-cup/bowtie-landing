@@ -8,10 +8,9 @@
     "start": "npm run dev",
     "copy": "cp -r public/* build",
     "clean": "rimraf build",
-    "pages": "node metadata/metadata.js",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
-    "postbuild": "npm run copy && npm run pages",
+    "postbuild": "npm run copy",
     "test": "echo \"Error: no test specified\"",
     "heroku-postbuild": "npm run build"
   },
