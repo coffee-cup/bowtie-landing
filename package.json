@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress",
     "start": "npm run dev",
-    "copy": "cp -r public/* build; cp public/index.html build/200.html; cp public/index.html build/404.html",
+    "copy": "cp -r public/* build",
     "clean": "rimraf build",
     "pages": "node metadata/metadata.js",
     "prebuild": "npm run clean",
